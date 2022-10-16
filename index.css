@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(219, 238, 255);
+    margin: 0;box-sizing: border-box;padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container1{
+     display: flex;
+     flex-direction: column;
+     width: 38rem;
+     height: 25rem;
+     height: 30rem;
+    margin:5% auto;
+    box-shadow: 0px 2px 6px 1px rgba(128, 128, 128, 0.6);
+}
+.pad-l{
+    padding-left: 2rem;
+}
+.c-grey{
+    color: silver;
+    display: inline-block;
+}
+.content1{
+    background-color: white;
+    height: 45%;
+    margin-top: -1.1rem;
+}
+h3{color: cyan;padding-top: 0.5rem;}
+.content1 h4{color: rgb(204, 198, 116);}
+.content1 p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: -0.1px;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 55%;
+    color: white;
+}
+.container2 p{
+    font-size: 0.8rem;
+    color: grey;
+}
+.content2{
+    background-color: rgba(86, 194, 194, 0.952);
+    width: 50%;
+}
+.content2 button{
+    background-color: rgb(204, 198, 116);
+    width: 75%;
+    margin-left: 0.5rem;
+    height: 2.3rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.price{
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+.content3{
+    background-color: rgb(21, 247, 247);
+    width: 50%;
+}
+.content3 p{margin-top: -0.35rem;}
+.m-br{display: none;}
+
+
+
+@media screen and (min-width:750px) and (max-width:840px) {
+    .container1{transform: scale(0.9);}
+    }
+@media screen and (min-width:461px) and (max-width:749px) {
+    .container1{width: 20rem;}
+    .content1 p{line-height: 1.7rem;}
+    .m-br{display: block;}
+}
+
+@media screen and (max-width:460px) {
+    .container1{width: 16rem;}
+    .m-br{display: none;}
+    .pad-l{padding-left:1.5rem;}
+    .content1 p{
+        font-size: 0.8rem;line-height: 1.2rem;width: 90%;
+    }
+}
+@media screen and (min-width:550px) and (max-width:749px) {
+    .container1{transform: scale(1.2);margin-top:6rem;margin-bottom: 
+        6rem;}
+}
+@media screen and (max-width:749px) {
+    .container1{height: auto;}
+    h4{line-height: 1.3rem;}
+    .content1 {width: 100%;height: 16.5rem;border-top-left-radius: 0.5rem;border-top-right-radius: 0.5rem;}
+.container2{
+    flex-direction: column;
+    width: 100%;}
+.content2{width: 100%;height: 14rem;}
+.content3{width: 100%;height: 14.5rem;border-bottom-left-radius: 0.5rem;border-top-left-radius: 0.5rem;border-bottom-right-radius: 0.5rem;}
+.d-br{display: none;}
+}
+    
